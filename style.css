@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0e0c0c49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 350px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: #0c0b0bc7;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.myTodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    flex: 1;
+}
+
+.todoLists {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex: 1;
+    width: 100%;
+}
+
+.no-todo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.todoList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    min-height: 40px;
+    box-shadow: 5px 5px rgb(0, 0, 1, 0.5);
+    font-weight: bold;
+    width: 100%;
+    column-gap: 16px;
+}
+
+.deleteTask {
+    cursor: pointer;
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background: orangered;
+    color: white;
+    outline: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.pText {
+    background: white;
+    text-transform: capitalize;
+    word-break: break-all;
+    hyphens: manual;
+}
+
+.inputVal {
+    max-width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    flex: 1;
+    padding: 8px;   
+}
+
+.inputValue {
+    display: flex;
+    column-gap: 5px;
+    width: 100%;
+}
+
+.btn {
+    max-width: 100px;
+    background: #097d56;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px #03110c;
+    flex: 1;
+    cursor: pointer;
+}
+
+.clearTask {
+    background: orangered;
+    color: white;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    outline-style: none;
+}
